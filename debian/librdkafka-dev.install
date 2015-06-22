@@ -2,3 +2,5 @@ usr/include/*/rdkafka.h
 usr/include/*/rdkafkacpp.h
 usr/lib/*/librdkafka.a
 usr/lib/*/librdkafka.so
+usr/lib/*/librdkafka++.a
+usr/lib/*/librdkafka++.so
