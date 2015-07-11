@@ -1,4 +1,4 @@
-librdkafka (0.8.6-2) unstable; urgency=medium
+librdkafka (0.8.6-2) trusty; urgency=medium
 
   * Update to 0.8.6
 
