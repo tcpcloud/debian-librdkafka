@@ -1,4 +1,4 @@
-librdkafka (0.8.6-0tcp1) trusty; urgency=medium
+librdkafka (0.8.6-0tcp1) jessie; urgency=medium
 
   * Update to 0.8.6
 
