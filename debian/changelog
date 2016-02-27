@@ -1,3 +1,9 @@
+librdkafka (0.8.6-2+tcp1) jessie; urgency=medium
+
+  * raise version to be newer than distribution
+
+ -- Filip Pytloun <filip@pytloun.cz>  Sat, 27 Feb 2016 08:59:46 +0100
+
 librdkafka (0.8.6-0tcp1) jessie; urgency=medium
 
   * Update to 0.8.6
