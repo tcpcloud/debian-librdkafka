@@ -1,8 +1,42 @@
-librdkafka (0.8.6-0tcp1) trusty; urgency=medium
+librdkafka (0.9.1-1) unstable; urgency=medium
 
-  * Update to 0.8.6
+  * New upstream release (Closes: #816047).
+    - Remove 0001-mklove-update-add-disable-silent-rules patch (not needed)
+    - Remove 0002_hexdump_use_size_t_instead_of_int patch (not needed)
+    - Fixes a GCC6-identified warning and possible FTBFS. (Closes: #811596)
+  * Add Build-Depends to libssl-dev/libsasl2-dev, to enable Kafka 0.9
+    encryption and authentication.
+  * Update the long description to mention 0.9 protocol support and also the
+    high-performance aspect, by copying upstream's description almost
+    verbatim.
+  * Bump Standards-Version to 3.9.8 (no changes needed).
+  * Switch Vcs-Git to GitHub's https (from git://)
+  * Migrate from our own -dbg package to the automatic -dbgsym package.
+  * Update librdkafka1.symbols with 0.9.0' and 0.9.1's new symbols.
+  * Ship the new C++ library, by shipping a new binary package, librdkafka++1.
+  * Ship pkg-config files in the -dev package for both the C and C++
+    libraries.
+  * Replace the perl build-dependency by python, as the build system (among
+    others) now requires it.
 
- -- Filip Pytloun <filip@pytloun.cz>  Mon, 22 Jun 2015 14:04:03 +0200
+ -- Faidon Liambotis <paravoid@debian.org>  Mon, 30 May 2016 16:07:33 +0300
+
+librdkafka (0.8.6-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Use size_t instead of int for hexdump to fix FTBFS (Closes: 799993):
+    assuming signed overflow does not occur when
+    assuming that (X + c) >= X is always true
+
+ -- YunQiang Su <syq@debian.org>  Mon, 21 Dec 2015 21:20:59 +0800
+
+librdkafka (0.8.6-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Backport upstream commit f6fd0da, adding --disable-silent-rules
+    compatibility support to mklove. (Closes: #788742)
+
+ -- Faidon Liambotis <paravoid@debian.org>  Sun, 19 Jul 2015 01:36:18 +0300
 
 librdkafka (0.8.5-2) unstable; urgency=medium
 
