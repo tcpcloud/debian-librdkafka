@@ -1,3 +1,9 @@
+librdkafka (0.9.1-1tcp1) trusty; urgency=medium
+
+  * tcpcloud trusty backport
+
+ -- Filip Pytloun <filip@pytloun.cz>  Fri, 10 Jun 2016 13:47:48 +0200
+
 librdkafka (0.9.1-1) unstable; urgency=medium
 
   * New upstream release (Closes: #816047).
